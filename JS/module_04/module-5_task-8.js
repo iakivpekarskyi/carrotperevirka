@@ -49,7 +49,7 @@ function filterBasket(array) {
     if (
       !array
         .flatMap(item => item.id)
-        .filter((item, index, array) => array.indexOf(item) === index) == []
+        .filter((item, index, array) => array.indexOf(item) !== index) == []
     ) {
       for (let i = 0, j = 1; i <= array.length - 1, j < array.length; i += 1, j += 1) {
         if (array[i].id === array[j].id) {
