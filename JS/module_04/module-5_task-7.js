@@ -62,7 +62,7 @@ const people3 = [
 
 function findNarcissist(array) {
   for (const friend of array) {
-    if (friend.know.length === 0) {
+    if (!friend.know.length) {
       const commonFriend = array.filter(user => array.indexOf(user) !== array.indexOf(friend));
 
       if (commonFriend.every(follower => follower.know.includes(friend.name))) {

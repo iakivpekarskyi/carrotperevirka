@@ -23,6 +23,16 @@ function finReader(array, bookName) {
     .map(friend => friend.name)
     .join(', ');
 }
+
+function totalAges(array) {
+  return array.reduce((total, friend) => {
+    if (friend.age) {
+      total += friend.age;
+    }
+    return total;
+  }, 0);
+}
 //TEST
 // console.log(finReader(friends, 'Harry Potter'));
 // console.log(finReader(friends, 'War and peace'));
+// console.log(totalAges(friends));
