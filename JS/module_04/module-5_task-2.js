@@ -74,3 +74,29 @@ const hogvarts = {
 // console.log(hogvarts.getFaculty('griffindor'));
 // console.log(hogvarts.facultyTotalScore('sliserin'));
 // console.log(hogvarts.winnerHogvarts());
+
+
+
+
+//   getBestScore(faculty1, faculty2) {
+//       const score1 = this[faculty1].reduce((totalScore, student) => {
+//           totalScore += student.points;
+//           return totalScore;
+//       }, 0);
+//       this.totalScore = score1;
+
+//       const score2 = this[faculty2].reduce((totalScore, student) => {
+//           totalScore += student.points;
+//           return totalScore;
+//       }, 0);
+
+//       if (score1 > score2) {
+//           return ` best faculty - ${faculty1}, Score - ${score1} `;
+//       }
+//       return ` best faculty - ${faculty2} Score - ${score2}   `;
+//   }
+
+
+
+// console.log(hogvarts.getBestScore('sliserin', 'griffindor'));
+
